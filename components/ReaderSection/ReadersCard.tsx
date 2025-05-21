@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ReadersCard() {
   return (
-       <div className="m-1 p-2.5 mb-4">
+       <div className="my-5">
                 <h2 className="text-[24px] text-black font-[600]">Readers' Choice</h2>
                 <div className="flex items-center">
                     <div className="mt-2 p-2 text-wrap w-[220]">
