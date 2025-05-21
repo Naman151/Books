@@ -8,7 +8,7 @@ import React from 'react'
 
 function DetailPage() {
   return (
-    <div>
+    <div className='ml-2 mt-5'>
         <Button className='bg-white rounded-md' size='sm'>
             <Image src={'/back.svg'} alt='back' width={4} height={10}/ >
             <p className='text-[12px] text-[#737373] font-[500]'>Button</p>

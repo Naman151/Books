@@ -1,18 +1,64 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Footer from "@/components/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const dmSans = localFont({
+  src: [
+    {
+      path: "./fonts/DMSans_18pt-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DMSans_18pt-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DMSans_18pt-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DmSans_18pt-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DMSans_18pt-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DMSans_18pt-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DMSans_18pt-Thin.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "./fonts/DMSans_18pt-ExtraLight.ttf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
+  variable: "--font-DM-sans",
 });
 
 export const metadata: Metadata = {
@@ -23,9 +69,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={dmSans.variable}>
+        <div className="flex">
+        <Sidebar/>
+        <div className="flex-auto">
         <Header/>
         {children}
+        </div>
+        </div>
+
       </body>
     </html>
   );
