@@ -5,7 +5,7 @@ import React from 'react'
 
 function TopCard() {
   return (
-     <div className="m-1 p-2.5">
+     <div className="m-1 p-2.5 mb-8">
      <h2 className="text-[24px] text-black font-semibold">Continue Reading</h2>
      <div className="flex mt-2.5">
        <div className="bg-white p-4 rounded-md shadow-md flex items-start mr-6">
