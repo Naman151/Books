@@ -22,7 +22,7 @@ function MonthBook() {
                                          <Image src={'/Bookmark.svg'} alt="icon" width={12} height={12}/>
                                          <p className="text-[#01383D]">Bookmark</p>
                                     </Button>
-                                </div>
+                                    </div>
                                 <p className="font-[400] text-[#737373] text-[14px]">This summary offers a concise overview of *The Blue Zones Solution* by Dan Buettner, capturing its k...</p>
                         </div>
 
