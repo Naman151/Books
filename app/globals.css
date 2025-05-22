@@ -40,6 +40,7 @@
 }
 
 @theme inline {
+  --font-display: "DMSans";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);

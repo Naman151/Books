@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 
 export default function Sidebar() {
   return (
-    <div className='p-4 w-50 h-180 shadow-sm'>
+    <div className='p-4 w-50 h-180 shadow-sm hidden lg:inline'>
         <div className='mb-5 flex justify-center'>
         <Image src={'/nosis-logo.svg'} alt='nosislogo' width={100} height={32}/>
         </div>
