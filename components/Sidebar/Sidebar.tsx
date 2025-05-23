@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
+import NavIcon from './NavIcon'
 
 export default function Sidebar() {
   return (
@@ -9,18 +10,21 @@ export default function Sidebar() {
         <Image src={'/nosis-logo.svg'} alt='nosislogo' width={100} height={32}/>
         </div>
         <nav className='ml-2'>
-        <div className='flex items-center my-3'>
+        {/* <div className='flex items-center my-3'>
              <Image src={'/home.svg'} alt='nosislogo' width={20} height={20}/>
              <p className='text-[14px] font-[600] text-[#0A0A0A] ml-2'>Home</p>
-        </div>
-        <div className='flex items-center my-3'>
+        </div> */}
+            <NavIcon icon='/home.svg' title='Home' active={true}/>
+            <NavIcon icon='/explore.svg' title='Explore' active={false}/>
+            <NavIcon icon='/libary.svg' title='Library' active={false}/>
+        {/* <div className='flex items-center my-3'>
              <Image src={'/explore.svg'} alt='nosislogo' width={20} height={20}/>
              <p className='text-[14px] font-[600] text-[#737373B2] ml-2'>Explore</p>
         </div>
         <div className='flex items-center my-3'>
              <Image src={'/libary.svg'} alt='nosislogo' width={20} height={20}/>
              <p className='text-[14px] font-[600] text-[#737373B2] ml-2'>Library</p>
-        </div>
+        </div> */}
         </nav>
 
         <div className="mt-60 flex justify-center ">
@@ -29,6 +33,7 @@ export default function Sidebar() {
                 <p className='text-[14px] font-[500] text-black'>Invite Friends</p>
             </Button>
         </div>
+        
         <nav className='mt-4 px-2'>
         <div className='flex items-center my-4'>
              <Image src={'/help.svg'} alt='nosislogo' width={20} height={20}/>
