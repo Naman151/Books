@@ -10,8 +10,6 @@ export default function ReadersCard(props) {
                   <BookInfo/>
                    <BookInfo/>
                     <BookInfo/>
-                     <BookInfo/>
-                      <BookInfo/>
                  </div>
         </div>
   )
