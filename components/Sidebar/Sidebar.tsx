@@ -14,9 +14,9 @@ export default function Sidebar() {
              <Image src={'/home.svg'} alt='nosislogo' width={20} height={20}/>
              <p className='text-[14px] font-[600] text-[#0A0A0A] ml-2'>Home</p>
         </div> */}
-            <NavIcon icon='/home.svg' title='Home' active={true}/>
-            <NavIcon icon='/explore.svg' title='Explore' active={false}/>
-            <NavIcon icon='/libary.svg' title='Library' active={false}/>
+            <NavIcon icon='/home.svg' title='Home' redirect='/' active={true}/>
+            <NavIcon icon='/explore.svg' title='Explore' redirect='/explore' active={false}/>
+            <NavIcon icon='/libary.svg' title='Library'  redirect='/library'  active={false}/>
         {/* <div className='flex items-center my-3'>
              <Image src={'/explore.svg'} alt='nosislogo' width={20} height={20}/>
              <p className='text-[14px] font-[600] text-[#737373B2] ml-2'>Explore</p>
@@ -33,7 +33,7 @@ export default function Sidebar() {
                 <p className='text-[14px] font-[500] text-black'>Invite Friends</p>
             </Button>
         </div>
-        
+
         <nav className='mt-4 px-2'>
         <div className='flex items-center my-4'>
              <Image src={'/help.svg'} alt='nosislogo' width={20} height={20}/>
